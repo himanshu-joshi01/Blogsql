@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLOG</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a class="logo" href="http://localhost:8080/home"><i class="fa-solid fa-blog"></i><b>BLOGS</b></a>
+    <div class="navicons">
+      <a id="login"><b>LOGIN</b></a>
+      <a href="http://localhost:8080/register"><b>JOIN US</b></a>
+      <div class="mode">
+        <div class="toggle"></div>
+      </div>
+    </div>
+  </div><br><br><br><br>
+  <section class="img1">
+  </section>
+  <section class="img2">
+
+  </section>
+  <section class="img3">
+
+  </section>
+
+  <section class="img4">
+
+  </section>
+
+  <div class="overlay"> </div>
+  <div class="login">
+    <i class="fa-regular fa-circle-xmark cross"></i>
+    <b>
+      <h1>Login to Your Account</h1><br>
+    </b>
+    <p>Login using social networks</p><br>
+    <div class="icons">
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href=""><i class="fa-brands fa-google-plus"></i></a>
+      <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <br>
+    <div>
+      <form method="post" action="/home/auth/blogs">
+        <input type="text" name="username" placeholder="username" id="button"><br><br>
+        <input type="password" name="password" placeholder="Password" id="button"><br><br>
+        <button class="btnsignin">Log in</button><br><br>
+    </div>
+    <a href="http://localhost:8080/register" class="regbtn">Register?</a>
+  </div>
+  <div class="footer">
+    <div class="icons">
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href=""><i class="fa-brands fa-google-plus"></i></a>
+      <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <p>Blogs Private Limited</p>
+    <p>Privacy Terms</p>
+  </div>
+  <script src="/loginform.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+
+</html>

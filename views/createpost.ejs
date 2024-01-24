@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="/home.css">
+</head>
+<body>
+    <div class="navbar">
+        <a class="logo" href="http://localhost:8080/home"><i class="fa-solid fa-blog"></i><b>BLOGS</b></a>
+        <div class="navicons">
+            <a href="http://localhost:8080/home/<%=id%>/blogs"><b>All BlOGS</b></a>
+          <a href="http://localhost:8080/home"><b>LOGOUT</b></a>
+        
+          <div class="mode">
+            <div class="toggle"></div>
+          </div>
+        </div>
+      </div><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="createpost">
+        <form method="post" action="/<%=id%>/createpost">
+            <input type="file" name="image" id=""><br>
+            <input type="text" name="title" id="" placeholder="Title"><br>
+           <textarea name="content" id="" cols="70" rows="20"></textarea><br>
+           <button>Submit</button>
+        </form>
+      </div>
+</body>
+</html>

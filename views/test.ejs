@@ -1,0 +1,40 @@
+<%-layout("/layouts/boilerplate.ejs") %>
+<body></body>
+    <br><br><br><br>
+    <section class="img1">
+    </section>
+    <section class="img2">
+  
+    </section>
+    <section class="img3">
+  
+    </section>
+  
+    <section class="img4">
+  
+    </section>
+
+    <div class="overlay"> </div>
+    <div class="login">
+        <i class="fa-regular fa-circle-xmark cross"></i>
+        <b>
+            <h1>Login to Your Account</h1><br>
+        </b>
+        <p>Login using social networks</p><br>
+        <div class="icons">
+            <a href=""><i class="fa-brands fa-facebook fbook"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus google"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin linkin" ></i></a>
+        </div>
+        <br>  
+        <div>
+            <form method="post" action="/home/auth/blogs">
+                <input type="text" name="username" placeholder="username" id="button"><br><br>
+                <input type="password" name="password" placeholder="Password" id="button"><br><br>
+                <button class="btnsignin">Log in</button><br><br><br>
+        </div>
+        <a style="text-decoration: none;" href="http://localhost:8080/register">Register?</a>
+    </div>
+    <script src="/loginform.js">
+    </script>
+</body>

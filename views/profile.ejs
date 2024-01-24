@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%=result[0].Username%></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/home.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a class="logo" href="http://localhost:8080/home"><i class="fa-solid fa-blog"></i> <b>BLOGS</b></a>
+    <div class="navicons">
+      <a href="http://localhost:8080/home">HOME</a>
+      <a href="http://localhost:8080/home/<%=result[0].Id%>/blogs">BLOGS</a>
+      <a href="http://localhost:8080/logout">LOGOUT</a>
+      <div class="mode">
+        <div class="toggle"></div>
+      </div>
+    </div>
+  </div>
+  <div class="profilepage">
+    <h1><b>Hi <%=result[0].Username%>!!!</b></h1>
+    <div class="profile">
+      <div class="about">
+        <h2>About me</h2><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam porro expedita nemo officiis rem commodi laudantium voluptatem, accusantium consectetur dolor earum molestiae veritatis consequuntur placeat mollitia molestias ab autem. Soluta earum est a temporibus! Nisi corrupti non mollitia? Exercitationem est quo, ducimus nesciunt ab vero et dolores molestias ea? Tenetur beatae iusto doloribus voluptas distinctio hic quidem aut autem accusamus.</p>
+      </div>
+      <div class="abcd">
+        <div style="background-image: url('<%=result[0].Image%>');" class="dp"></div>
+        <form method="post" action="/home/auth/blogs/<%=result[0].Id%>">
+          <label for="file"><i class="fa-solid fa-circle-plus"></i></label>
+          <input type="file" name="image" id="file" style="display: none;">
+          <button>Submit</button>
+        </form>
+      </div>
+      <div class="info">
+        <h2>Details</h2><br>
+        <p>Full Name:</p><br>
+        <p>himanshu joshi</p>
+        <p>Username:</p><br>
+        <p>
+          <%=result[0].Username%>
+        </p>
+        <p>Email:</p><br>
+        <p>
+          <%=result[0].Email%>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="icons">
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href=""><i class="fa-brands fa-google-plus"></i></a>
+      <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <p>Blogs Private Limited</p>
+    <p>Privacy Terms</p>
+  </div>
+</body>
+<script src="/darkmode.js">
+</script>
+
+</html>

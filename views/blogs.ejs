@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Blogs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/home.css">
+  <link rel="icon" href="/assets/blogger-logo-icon-png-28.png" type="Image/x-icon">
+</head>
+<body>
+  <section class="navbar">
+    <a class="logo" href="http://localhost:8080/home"><i class="fa-solid fa-blog"></i><b>BLOGS</b></a>
+    <div class="navicons">
+      <a href="http://localhost:8080/home">HOME</a>
+      <a href="http://localhost:8080/<%=result[0].Id%>/createpost">CREATE BLOG</a>
+      <a id="login" href="http:s//localhost:8080/logout">LOGOUT</a>
+      <div class="mode">
+        <div class="toggle"></div>
+      </div>
+    </div>
+    <a href="http://localhost:8080/home/auth/blogs/<%=result[0].Id%>">
+      <div style="background-image: url('<%=result[0].Image%>');" class="smalldp"></div>
+    </a>
+  </section>
+  <div class="allblogs">
+    <div class="catg">
+      <li>News</li>                     
+      <li>Food</li>                      
+      <li>Personal</li>
+      <li>Travel</li>
+      <li>Fashion</li>
+      <li>Music</li>
+      <li>Movie</li>
+    </div>
+    <div class="blogs">
+      <div>Hello</div>
+      <div>user</div>
+      <div>welcome</div>
+      <div>to</div>
+      <div>the</div>
+      <div>blogs</div>
+      <div>happy </div>
+      <div>to see you</div>
+    </div>
+    <div class="footer">
+      <div class="icons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-google-plus"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <p>Blogs Private Limited</p>
+      <p>Privacy Terms</p>
+    </div>
+
+</body>
+<script src="/darkmode.js">
+</script>
+
+</html>

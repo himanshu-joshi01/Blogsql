@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width0, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/home.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="logo" href="http://localhost:8080/home"><i class="fa-solid fa-blog"></i><b>BLOGS</b></a>
+        <div class="navicons">
+            <a href="http://localhost:8080/home">HOME</a>
+            <a id="login" href="http://localhost:8080/home/auth">LOGIN</a>
+            <div class="mode">
+                <div class="toggle"></div>
+            </div>
+        </div>
+    </div>
+    <div class="reg">
+        <div class="signup">
+            <form method="post" action="/register">
+                <input type="text" name="username" placeholder="Username" id="button">
+                <input type="password" name="password" placeholder="Password" id="button"><br><br>
+                <input type="email" name="email" id="email" placeholder="Write your Email"><br><br>
+                <button>Register</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="icons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-google-plus"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>Blogs Private Limited</p>
+        <p>Privacy Terms</p>
+      </div>
+</body>
+<script src="/darkmode.js">
+</script>
+
+</html>
