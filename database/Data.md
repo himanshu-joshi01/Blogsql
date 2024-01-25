@@ -6,7 +6,7 @@
 
 ```sql
 
-create database demo;
+create database blogs;
 
 ```
 
