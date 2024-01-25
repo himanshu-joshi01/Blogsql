@@ -3,7 +3,6 @@ const mysql = require("mysql2");
 const path = require("path");
 const { v4: uuidv4 } = require("uuid");
 const methodOverride = require("method-override");
-const session = require("express-session");
 const { Console } = require("console");
 const ejsMate= require("ejs-mate");
 const app = express();
@@ -16,15 +15,6 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(methodOverride("_method"));
 app.use(express.urlencoded({ extended: true }));
 app.engine("ejs",ejsMate);
-
-
-
-app.use(session({
-    secret: 'secret',
-    resave: false,
-    saveUninitialized: true,
-}));
-
 
 const connection = mysql.createConnection({
     host: 'localhost',
@@ -62,8 +52,7 @@ app.post("/home/auth/blogs", (req, res) => {
             connection.query(q, (err, result) => {
                 if (err) throw err;
                 if (result.length > 0) {
-                    req.session.loggedin = true;
-                    req.session.username = result.Username;
+
                     res.render("blogs.ejs", { result });
                 }
                 else {
